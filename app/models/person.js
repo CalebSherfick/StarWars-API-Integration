@@ -9,11 +9,11 @@ export default class Person {
   }
 
 
-  get BasicTemplate() {
+  getBasicTemplate() {
     return `<li onclick="app.controllers.swController.getPerson('${this.url}')" class="${this.gender}">${this.name}</li>`
   }
 
-  get DetailedTemplate() {
+  getDetailedTemplate() {
     return `
         <h3>${this.name}</h3>
         <p>Hair: ${this.hairColor}</p>
