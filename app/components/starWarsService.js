@@ -3,11 +3,15 @@ import Person from "../models/person.js";
 import Starship from "../models/starship.js";
 
 //Creates an object to send requests from
+// @ts-ignore
 let _peopleApi = axios.create({
   baseURL: 'https://swapi.co/api/people'
 })
 
+// @ts-ignore
 let _starshipsApi = axios.create({
+
+
   baseURL: 'https://swapi.co/api/starships'
 })
 
