@@ -8,7 +8,7 @@ let _peopleApi = axios.create({
 })
 
 let _starshipsApi = axios.create({
-  baseURL: 'https://swapi.cp/api/starships'
+  baseURL: 'https://swapi.co/api/starships'
 })
 
 let _state = {
@@ -91,7 +91,7 @@ export default class StarWarsService {
           previousUrl: response.data.previous
         }
         setState('nextPrevStarships', urlData)
-        setState('people', starships)
+        setState('starships', starships)
       })
       .catch(err => {
         console.error(err)
